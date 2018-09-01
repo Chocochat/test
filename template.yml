@@ -7,9 +7,6 @@ Parameters:
   ProjectId:
     Type: String
     Description: AWS CodeStar projectID used to associate new resources to team members
-  dataUrl:
-    Type: String
-    Description: Input data URL
 
 # Enable blue/green deployments using this Globals section. For instructions, see the AWS CodeStar User Guide:
 # https://docs.aws.amazon.com/codestar/latest/userguide/how-to-modify-serverless-project.html?icmpid=docs_acs_rm_tr
@@ -29,7 +26,7 @@ Resources:
       Runtime: java8
       Environment:
         Variables:
-          dataUrl: !Ref dataUrl
+          dataUrl: 'https://nbdb7q51p5.execute-api.ap-southeast-2.amazonaws.com'
       Role:
         Fn::ImportValue:
           !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
