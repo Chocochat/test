@@ -3,8 +3,8 @@ package com.aws.codestar.projecttemplates.handler;
 import com.amazonaws.services.lambda.runtime.Context;
 
 import com.amazonaws.services.lambda.runtime.RequestHandler;
-import com.aws.codestar.projecttemplates.GatewayResponse;
-import com.aws.codestar.projecttemplates.model.SortingService;
+import com.aws.codestar.projecttemplates.model.GatewayResponse;
+import com.aws.codestar.projecttemplates.service.SortingService;
 import lombok.extern.slf4j.Slf4j;
 
 /**

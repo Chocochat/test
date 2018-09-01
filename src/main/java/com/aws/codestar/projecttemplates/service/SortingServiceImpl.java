@@ -1,15 +1,10 @@
 package com.aws.codestar.projecttemplates.service;
 
-import com.aws.codestar.projecttemplates.GatewayResponse;
-//import com.aws.codestar.projecttemplates.configuration.LambdaEnv;
-import com.aws.codestar.projecttemplates.model.SortingRequest;
-import com.aws.codestar.projecttemplates.model.SortingResponse;
-import com.aws.codestar.projecttemplates.model.SortingService;
+import com.aws.codestar.projecttemplates.model.GatewayResponse;
 import com.aws.codestar.projecttemplates.util.HttpUtils;
 import com.google.gson.JsonObject;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpStatus;
-import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +12,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static com.aws.codestar.projecttemplates.util.ErrorMsgTransformer.createError;
+
+//import com.aws.codestar.projecttemplates.configuration.LambdaEnv;
 
 @Slf4j
 @Service

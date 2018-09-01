@@ -2,7 +2,7 @@ package com.aws.codestar.projecttemplates.handler;
 
 import com.amazonaws.serverless.proxy.internal.testutils.MockLambdaContext;
 
-import com.aws.codestar.projecttemplates.GatewayResponse;
+import com.aws.codestar.projecttemplates.model.GatewayResponse;
 
 import org.json.JSONObject;
 import org.junit.jupiter.api.AfterAll;
