@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: A sample Java Spring web service created with AW
+ S CodeStar.
+Implementation-Version: 1.0
+Built-By: sing
+Implementation-Vendor-Id: com.aws.codestar.projecttemplates
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_131
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/HelloWorld
+
