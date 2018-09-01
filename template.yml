@@ -27,6 +27,9 @@ Resources:
     Properties:
       Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
       Runtime: java8
+      Environment:
+        Variables:
+          dataUrl: !Ref dataUrl
       Role:
         Fn::ImportValue:
           !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
