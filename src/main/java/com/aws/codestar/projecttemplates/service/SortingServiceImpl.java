@@ -1,7 +1,7 @@
 package com.aws.codestar.projecttemplates.service;
 
 import com.aws.codestar.projecttemplates.GatewayResponse;
-import com.aws.codestar.projecttemplates.configuration.LambdaEnv;
+//import com.aws.codestar.projecttemplates.configuration.LambdaEnv;
 import com.aws.codestar.projecttemplates.model.SortingRequest;
 import com.aws.codestar.projecttemplates.model.SortingResponse;
 import com.aws.codestar.projecttemplates.util.HttpUtils;
