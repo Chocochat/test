@@ -8,7 +8,7 @@ import com.aws.codestar.projecttemplates.model.SortingService;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * Handler for requests to Lambda function.
+ * Handler for requests to Lambda function. test
  */
 @Slf4j
 public class HelloWorldHandler implements RequestHandler<Object, Object> {
