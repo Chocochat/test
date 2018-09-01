@@ -24,6 +24,9 @@ public class SortingServiceImpl implements SortingService {
     @Autowired
     private HttpUtils httpUtils;
 
+    public SortingServiceImpl() {
+    }
+
     @Override
     public GatewayResponse getSortedData(String awsRequestId) {
         JsonObject jsonObject;
