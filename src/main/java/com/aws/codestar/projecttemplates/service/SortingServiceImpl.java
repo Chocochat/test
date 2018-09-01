@@ -21,20 +21,16 @@ import static com.aws.codestar.projecttemplates.util.ErrorMsgTransformer.createE
 @Service
 public class SortingServiceImpl implements SortingService {
 
-    private static final String DATA_URL = "/prod/v1/cars";
-
-    @Autowired
-    private LambdaEnv lambdaEnv;
+    private static final String DATA_URL = "https://nbdb7q51p5.execute-api.ap-southeast-2.amazonaws.com/prod/v1/cars";
 
     @Autowired
     private HttpUtils httpUtils;
 
     @Override
     public GatewayResponse getSortedData(SortingRequest sortingRequest, String awsRequestId) {
-        final String dataUrl = new StringBuilder().append(lambdaEnv.getDataUrl()).append(DATA_URL).toString();
         JsonObject jsonObject;
         try{
-            jsonObject = httpUtils.getResponse(dataUrl, awsRequestId);
+            jsonObject = httpUtils.getResponse(DATA_URL, awsRequestId);
         } catch (Exception ex) {
             log.error("Not a valid Json received from SAP {}", ex);
             throw new RuntimeException(createError(
