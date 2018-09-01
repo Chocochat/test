@@ -1,0 +1,57 @@
+### Java template
+# Compiled class file
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+**/target/
+
+# Gradle
+**/.gradle/**
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# IDEA
+**/.idea/*
+**/*.iml
+**/*.iws
+**/*.ipr
+**/out
+
+# Eclipse
+.metadata/
+RemoteSystemsTempFiles/
+/Servers/
+.recommenders
+.classpath
+.project
+.settings/
+.metadata
+bin/
+build/
+
+# VSCode
+.code
+
+# Log files
+transaction-logs
+logs
+**/*.log
+
+# OSX files
+**/.DS_Store
+**/*.pid.lock
+
+# npm
+node_modules
+npm-debug.log
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
