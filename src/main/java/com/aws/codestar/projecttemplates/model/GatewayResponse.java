@@ -1,5 +1,7 @@
 package com.aws.codestar.projecttemplates.model;
 
+import lombok.Getter;
+
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -7,6 +9,7 @@ import java.util.Map;
 /**
  * POJO containing response object for API Gateway.
  */
+@Getter
 public class GatewayResponse {
 
     private final String body;
@@ -17,17 +20,5 @@ public class GatewayResponse {
         this.statusCode = statusCode;
         this.body = body;
         this.headers = Collections.unmodifiableMap(new HashMap<>(headers));
-    }
-
-    public String getBody() {
-        return body;
-    }
-
-    public Map<String, String> getHeaders() {
-        return headers;
-    }
-
-    public int getStatusCode() {
-        return statusCode;
     }
 }

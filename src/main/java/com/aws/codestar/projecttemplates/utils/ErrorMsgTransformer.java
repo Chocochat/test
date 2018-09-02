@@ -13,18 +13,17 @@ public class ErrorMsgTransformer {
     private ErrorMsgTransformer() {
     }
 
-    public static String createError(String errorType, int statusCode, String requestId, String message) {
+    public static String createError(String body, int header, String statusCode) {
 
         try {
             Map<String, Object> errorPayload = new HashMap<>();
-            errorPayload.put("errorType", errorType);
             errorPayload.put("httpStatus", statusCode);
-            errorPayload.put("requestId", requestId);
-            errorPayload.put("message", message);
+            errorPayload.put("header", header);
+            errorPayload.put("body", body);
             return new ObjectMapper().writeValueAsString(errorPayload);
         } catch (JsonProcessingException e) {
             log.error("JsonProcessingException {}", e);
-            return String.format("{\"errorType\":\"InternalServerError\",\"httpStatus\":500,\"requestId\":\"%s\",\"message\":\"JsonProcessingException occurred.\"}", requestId);
+            return String.format("{\"errorType\":\"InternalServerError\",\"httpStatus\":500,\"requestId\":\"%s\",\"message\":\"JsonProcessingException occurred.\"}");
         }
     }
 }

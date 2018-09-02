@@ -17,7 +17,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Example {
+public class ReceivedDataObjectMapper {
 
     @SerializedName("name")
     @Expose

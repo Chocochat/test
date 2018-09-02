@@ -1,60 +1,61 @@
-package com.aws.codestar.projecttemplates.util;
+package com.aws.codestar.projecttemplates.utils;
 
+import com.aws.codestar.projecttemplates.model.ErrorGatewayResponse;
 import com.google.gson.Gson;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
+import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
-import static com.aws.codestar.projecttemplates.utils.ErrorMsgTransformer.createError;
+import java.util.HashMap;
+import java.util.Map;
+
 import static org.springframework.http.HttpMethod.GET;
 
 @Slf4j
 @Component
 public class HttpUtils {
 
+    /**
+     * Gets new RestTemplate
+     * @return
+     */
     protected RestTemplate getRestTemplate() {
         return new RestTemplate();
     }
 
-    public <T> ResponseEntity<T> getResponse(String url, String awsRequestId, Class<T> responseType) {
-        log.error("URL: {}", url);
-        ResponseEntity<T> responseEntity;
-        HttpEntity<String> entity = new HttpEntity<>(CreateHeaders());
-        RestTemplate restTemplate = getRestTemplate();
-        responseEntity = restTemplate.exchange(url, GET, entity, responseType);
-        int statusCodeValue = responseEntity.getStatusCodeValue();
-        if (200 != statusCodeValue) {
-            log.error("Error retrieving data, the status code is {} and the error response is {}", statusCodeValue, responseEntity.getBody());
-            throw new RuntimeException(createError(
-                    "Exception in backend",
-                    statusCodeValue,
-                    awsRequestId,
-                    "Unable to get required information"));
+    /**
+     * Makes Http call
+     * @param url
+     * @param responseType
+     * @param <T>
+     * @return responseEntity
+     */
+    public <T> ResponseEntity<T> getResponse(String url, Class<T> responseType) throws ErrorGatewayResponse {
+        log.debug("URL: {}", url);
+
+        //Makes Get request
+        ResponseEntity<T> responseEntity = null;
+        
+        try{
+            responseEntity = getRestTemplate().exchange(url, GET, new HttpEntity<>(new HttpHeaders()) , responseType);
+        } catch (Exception ex) {
+            log.error("Error retrieving data, the error response is {}", ex);
+            if (200 != ((HttpClientErrorException)ex).getRawStatusCode()) {
+                Map<String, String> errorMap = new HashMap<>();
+                errorMap.put("Error", "error in getting data");
+                throw new ErrorGatewayResponse(new Gson().toJson(errorMap), ((HttpClientErrorException) ex).getResponseHeaders(), ((HttpClientErrorException)ex).getRawStatusCode());
+            }
         }
-        log.error("status code: {}",statusCodeValue);
-        log.error("Response body : {}", responseEntity.getBody());
-
-
-
         return responseEntity;
     }
 
-    private HttpHeaders CreateHeaders() {
-        HttpHeaders headers = new HttpHeaders();
-//        headers.set("Accept", String.valueOf(MediaType.APPLICATION_JSON));
-        return headers;
+    public static void main(String []args) throws ErrorGatewayResponse {
+        ResponseEntity<String> responseEntity ;
+            responseEntity = new HttpUtils().getResponse("https://nbdb7q51p5.execute-api.ap-southeast-2.amazonaws.com/prod/v1/carsl", String.class);
     }
-
-//    public static void main(String []args){
-//        ResponseEntity<String> responseEntity = new HttpUtils().getResponse("https://nbdb7q51p5.execute-api.ap-southeast-2.amazonaws.com/prod/v1/cars", "1234-1234", String.class);
-//        System.out.println(responseEntity.getStatusCodeValue());
-//        System.out.println(responseEntity.getBody());
-//    }
 
 }
