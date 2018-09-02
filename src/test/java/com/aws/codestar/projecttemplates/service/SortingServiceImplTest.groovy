@@ -49,29 +49,4 @@ class SortingServiceImplTest extends Specification {
         exception.statusCode == 400
         exception.body == "{\"Error\":\"error in getting data\"}"
     }
-
-
-
-
-
-
-
-
-//    def "test getCommonUtils"() {
-//        given:
-//
-//        when:
-//        // TODO implement stimulus
-//        then:
-//        // TODO implement assertions
-//    }
-//
-//    def "test getResponseHeaders"() {
-//        given:
-//
-//        when:
-//        // TODO implement stimulus
-//        then:
-//        // TODO implement assertions
-//    }
 }
