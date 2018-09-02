@@ -8,6 +8,8 @@
 *.tar.gz
 *.rar
 **/target/
+**/target/**
+*.iml
 
 # Gradle
 **/.gradle/**
