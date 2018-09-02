@@ -1,4 +1,4 @@
-package com.aws.codestar.projecttemplates.util;
+package com.aws.codestar.projecttemplates.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
