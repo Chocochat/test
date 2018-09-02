@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.aws.codestar.projecttemplates.util.ErrorMsgTransformer.createError;
+import static com.aws.codestar.projecttemplates.utils.ErrorMsgTransformer.createError;
 
 //import com.aws.codestar.projecttemplates.configuration.LambdaEnv;
 

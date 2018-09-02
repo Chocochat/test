@@ -11,7 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-import static com.aws.codestar.projecttemplates.util.ErrorMsgTransformer.createError;
+import static com.aws.codestar.projecttemplates.utils.ErrorMsgTransformer.createError;
 import static org.springframework.http.HttpMethod.GET;
 
 @Slf4j
