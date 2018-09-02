@@ -13,15 +13,10 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class HelloWorldHandler implements RequestHandler<Object, Object> {
 
-    protected final SortingService sortingService;
-
-
-    public HelloWorldHandler(SortingService sortingService) {
-        this.sortingService = new SortingServiceImpl();
-    }
 
     public Object handleRequest(Object object, Context context) {
         log.error("inputRequest: {}", object.toString());
+        SortingService sortingService = new SortingServiceImpl();
         GatewayResponse gatewayResponse =  sortingService.getSortedData(context.getAwsRequestId());
 
 
