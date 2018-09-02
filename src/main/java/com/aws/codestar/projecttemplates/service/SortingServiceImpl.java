@@ -51,6 +51,7 @@ public class SortingServiceImpl implements SortingService {
         JsonArray receivedData = new JsonParser().parse(responseEntity.getBody()).getAsJsonArray();
 
         //data to clean the empty values
+        //Assumption not considering the empty values for sorting
         List<NamesWithCars> cleanedDatas = getCommonUtils().redeivedDataClueanUp(receivedData);
 
         //sorting by Brand and then by color

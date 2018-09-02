@@ -11,9 +11,9 @@ import com.google.gson.JsonElement;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.stream.Stream;
 
 public class CommonUtils {
@@ -61,7 +61,7 @@ public class CommonUtils {
      * @return
      */
     public Map<String, List<String>> createSimpleMapWithSortedData(List<NamesWithCars> sortedData) {
-        Map<String, List<String>> mapForUI = new HashMap<>();
+        Map<String, List<String>> mapForUI = new TreeMap<>();
         for(NamesWithCars namesWithCars: sortedData){
             if(mapForUI.containsKey(namesWithCars.getBrand())){
                 List<String> getExistingList = mapForUI.get(namesWithCars.getBrand());
