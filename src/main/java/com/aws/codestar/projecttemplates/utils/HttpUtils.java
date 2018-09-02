@@ -1,6 +1,7 @@
 package com.aws.codestar.projecttemplates.util;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpEntity;
@@ -21,12 +22,12 @@ public class HttpUtils {
         return new RestTemplate();
     }
 
-    public JsonObject getResponse(String url, String awsRequestId) {
+    public <T> ResponseEntity<T> getResponse(String url, String awsRequestId, Class<T> responseType) {
         log.error("URL: {}", url);
-        ResponseEntity<String> responseEntity;
+        ResponseEntity<T> responseEntity;
         HttpEntity<String> entity = new HttpEntity<>(CreateHeaders());
         RestTemplate restTemplate = getRestTemplate();
-        responseEntity = restTemplate.exchange(url, GET, entity, String.class);
+        responseEntity = restTemplate.exchange(url, GET, entity, responseType);
         int statusCodeValue = responseEntity.getStatusCodeValue();
         if (200 != statusCodeValue) {
             log.error("Error retrieving data, the status code is {} and the error response is {}", statusCodeValue, responseEntity.getBody());
@@ -39,15 +40,21 @@ public class HttpUtils {
         log.error("status code: {}",statusCodeValue);
         log.error("Response body : {}", responseEntity.getBody());
 
-        JsonObject jsonObject = new Gson().fromJson(responseEntity.getBody(), JsonObject.class);
 
-        return jsonObject;
+
+        return responseEntity;
     }
 
     private HttpHeaders CreateHeaders() {
         HttpHeaders headers = new HttpHeaders();
-        headers.set("Accept", String.valueOf(MediaType.APPLICATION_JSON));
+//        headers.set("Accept", String.valueOf(MediaType.APPLICATION_JSON));
         return headers;
     }
+
+//    public static void main(String []args){
+//        ResponseEntity<String> responseEntity = new HttpUtils().getResponse("https://nbdb7q51p5.execute-api.ap-southeast-2.amazonaws.com/prod/v1/cars", "1234-1234", String.class);
+//        System.out.println(responseEntity.getStatusCodeValue());
+//        System.out.println(responseEntity.getBody());
+//    }
 
 }

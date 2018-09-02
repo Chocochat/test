@@ -2,10 +2,12 @@ package com.aws.codestar.projecttemplates.service;
 
 import com.aws.codestar.projecttemplates.model.GatewayResponse;
 import com.aws.codestar.projecttemplates.util.HttpUtils;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpStatus;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -24,14 +26,12 @@ public class SortingServiceImpl implements SortingService {
     @Autowired
     private HttpUtils httpUtils;
 
-    public SortingServiceImpl() {
-    }
 
     @Override
     public GatewayResponse getSortedData(String awsRequestId) {
-        JsonObject jsonObject;
+        ResponseEntity<String> responseEntity;
         try{
-            jsonObject = httpUtils.getResponse(DATA_URL, awsRequestId);
+            responseEntity = httpUtils.getResponse(DATA_URL, awsRequestId, String.class);
         } catch (Exception ex) {
             log.error("Not a valid Json received from SAP {}", ex);
             throw new RuntimeException(createError(
@@ -43,7 +43,7 @@ public class SortingServiceImpl implements SortingService {
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/json");
 
-        return new GatewayResponse(jsonObject.toString(), headers, 200);
+        return new GatewayResponse(responseEntity.getBody(), headers, 200);
 
 
 //        return jsonObject;
