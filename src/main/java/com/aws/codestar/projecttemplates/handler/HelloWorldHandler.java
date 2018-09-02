@@ -4,6 +4,7 @@ import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.aws.codestar.projecttemplates.model.GatewayResponse;
 import com.aws.codestar.projecttemplates.service.SortingService;
+import com.aws.codestar.projecttemplates.service.SortingServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -16,7 +17,7 @@ public class HelloWorldHandler implements RequestHandler<Object, Object> {
 
 
     public HelloWorldHandler(SortingService sortingService) {
-        this.sortingService = sortingService;
+        this.sortingService = new SortingServiceImpl();
     }
 
     public Object handleRequest(Object object, Context context) {
