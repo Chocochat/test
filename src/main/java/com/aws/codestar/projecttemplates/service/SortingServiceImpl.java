@@ -23,14 +23,12 @@ public class SortingServiceImpl implements SortingService {
 
     private static final String DATA_URL = "https://nbdb7q51p5.execute-api.ap-southeast-2.amazonaws.com/prod/v1/cars";
 
-    @Autowired
-    HttpUtils httpUtils;
 
     @Override
     public GatewayResponse getSortedData(String awsRequestId) {
         ResponseEntity<String> responseEntity;
         try{
-            responseEntity = httpUtils.getResponse(DATA_URL, awsRequestId, String.class);
+            responseEntity = new HttpUtils().getResponse(DATA_URL, awsRequestId, String.class);
         } catch (Exception ex) {
             log.error("Not a valid Json received from SAP {}", ex);
             throw new RuntimeException(createError(
@@ -46,5 +44,11 @@ public class SortingServiceImpl implements SortingService {
 
 
 //        return jsonObject;
+    }
+
+    public static void main(String []args){
+        GatewayResponse responseEntity = new SortingServiceImpl().getSortedData("5678-5678");
+        System.out.println(responseEntity.getStatusCode());
+        System.out.println(responseEntity.getBody());
     }
 }
