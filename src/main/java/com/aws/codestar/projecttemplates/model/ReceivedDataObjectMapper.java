@@ -14,9 +14,7 @@ import java.util.List;
 @Getter
 @Setter
 @ToString
-@NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class ReceivedDataObjectMapper {
 
     @SerializedName("name")

@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6b21611-bf77-4c27-875e-a19127f845fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/ErrorGatewayResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/CommonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/service/SortingServiceImplTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/utils/CommonUtilsTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/utils/HttpUtilsTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/inputdata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/responsedata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloWorld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/handler/HelloWorldHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/handler/HelloWorldHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/ReceivedDataObjectMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/GatewayResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/GatewayResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/ReceivedDataObjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/ReceivedDataObjectMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/ErrorMsgTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/ErrorMsgTransformer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/HttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/HttpUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/handler/HelloWorldHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/handler/HelloWorldHandlerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,6 +21,32 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/HelloWorld$CommonUtilsTest.ic" NAME="CommonUtilsTest Coverage Results" MODIFIED="1535901928170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.aws.codestar.projecttemplates.utils.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HelloWorld$SortingServiceImplTest.ic" NAME="SortingServiceImplTest Coverage Results" MODIFIED="1535896114191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.aws.codestar.projecttemplates.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HelloWorld$CommonUtilsTest_test_redeivedDataClueanUp.ic" NAME="CommonUtilsTest.test redeivedDataClueanUp Coverage Results" MODIFIED="1535901912532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.aws.codestar.projecttemplates.utils.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HelloWorld$SortingServiceImplTest_test_getSortedData.ic" NAME="SortingServiceImplTest.test getSortedData Coverage Results" MODIFIED="1535894983367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.aws.codestar.projecttemplates.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HelloWorld$HttpUtilsTest_test_getResponse.ic" NAME="HttpUtilsTest.test getResponse Coverage Results" MODIFIED="1535898577493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.aws.codestar.projecttemplates.utils.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HelloWorld$HttpUtilsTest.ic" NAME="HttpUtilsTest Coverage Results" MODIFIED="1535899154050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.aws.codestar.projecttemplates.utils.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="346" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1596513030">
@@ -95,161 +121,48 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="2" />
-          <entry key="java" value="25" />
+          <entry key="class" value="4" />
+          <entry key="groovy" value="8" />
+          <entry key="java" value="40" />
+          <entry key="json" value="2" />
           <entry key="lst" value="1" />
-          <entry key="xml" value="4" />
-          <entry key="yml" value="2" />
+          <entry key="xml" value="6" />
+          <entry key="yml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="25" />
+          <entry key="CLASS" value="4" />
+          <entry key="Groovy" value="8" />
+          <entry key="JAVA" value="40" />
+          <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="4" />
-          <entry key="YAML" value="2" />
+          <entry key="XML" value="6" />
+          <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
           <entry key="gitignore" value="9" />
-          <entry key="java" value="1927" />
+          <entry key="groovy" value="1069" />
+          <entry key="java" value="2082" />
           <entry key="txt" value="7" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1927" />
+          <entry key="Groovy" value="1069" />
+          <entry key="JAVA" value="2082" />
           <entry key="PLAIN_TEXT" value="29" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="31" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/HttpUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="57" column="148" selection-start-line="57" selection-start-column="148" selection-end-line="57" selection-end-column="148" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/ReceivedDataObjectMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/NamesWithCars.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/ErrorMsgTransformer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="45" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-375">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2751#2752#0" expanded="true" />
-                <element signature="e#2789#2790#0" expanded="true" />
-                <element signature="e#2831#2832#0" expanded="true" />
-                <element signature="e#2871#2872#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/CommonUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/ErrorGatewayResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/GatewayResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/Car.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -296,7 +209,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/SortingRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/handler/AbstractLambdaHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/util/HttpUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/handler/HelloWorldHandlerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/configuration/LambdaEnv.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/SortingService.java" />
@@ -306,15 +218,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/Car.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/NamesWithCars.java" />
         <option value="$PROJECT_DIR$/template.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/Example.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/CommonUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/ErrorMsgTransformer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/handler/HelloWorldHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/ErrorGatewayResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/GatewayResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/CommonUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/handler/HelloWorldHandlerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/ReceivedDataObjectMapper.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/inputdata.json" />
+        <option value="$PROJECT_DIR$/src/test/resources/responsedata.json" />
+        <option value="$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/service/SortingServiceImplTest.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/HttpUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/utils/HttpUtilsTest.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/utils/CommonUtilsTest.groovy" />
       </list>
     </option>
   </component>
@@ -395,15 +314,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="projecttemplates" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HelloWorld" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="projecttemplates" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -414,6 +324,52 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="projecttemplates" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HelloWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HelloWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HelloWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="projecttemplates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HelloWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="projecttemplates" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HelloWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="projecttemplates" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HelloWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -426,7 +382,10 @@
     <property name="SearchEverywhereHistoryKey" value="pom.xml&#9;FILE&#9;jar:///Users/sing/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar!/pom.xml&#10;pom&#9;FILE&#9;file:///Users/sing/temp/singaram/test/target/maven-archiver/pom.properties" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535880672686" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535901927895" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Spock" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Spock" value="spock.lang.Specification" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
@@ -434,6 +393,13 @@
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.aws.codestar.projecttemplates.utils" />
+      <recent name="com.aws.codestar.projecttemplates.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="spock.lang.Specification" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -461,21 +427,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SortingServiceImpl">
-    <configuration name="HttpUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.aws.codestar.projecttemplates.util.HttpUtils" />
-      <module name="HelloWorld" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.aws.codestar.projecttemplates.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CommonUtilsTest">
     <configuration name="SortingServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.aws.codestar.projecttemplates.service.SortingServiceImpl" />
       <module name="HelloWorld" />
@@ -496,10 +448,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in HelloWorld" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommonUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HelloWorld" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aws.codestar.projecttemplates.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.aws.codestar.projecttemplates.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.aws.codestar.projecttemplates.utils.CommonUtilsTest" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonUtilsTest.test createSimpleMapWithSortedData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HelloWorld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aws.codestar.projecttemplates.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.aws.codestar.projecttemplates.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.aws.codestar.projecttemplates.utils.CommonUtilsTest" />
+      <option name="METHOD_NAME" value="test createSimpleMapWithSortedData" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonUtilsTest.test doSortingWithBrandAndthencolor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HelloWorld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aws.codestar.projecttemplates.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.aws.codestar.projecttemplates.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.aws.codestar.projecttemplates.utils.CommonUtilsTest" />
+      <option name="METHOD_NAME" value="test doSortingWithBrandAndthencolor" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonUtilsTest.test redeivedDataClueanUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HelloWorld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aws.codestar.projecttemplates.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.aws.codestar.projecttemplates.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.aws.codestar.projecttemplates.utils.CommonUtilsTest" />
+      <option name="METHOD_NAME" value="test redeivedDataClueanUp" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -520,17 +529,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.All in HelloWorld" />
-      <item itemvalue="Application.HttpUtils" />
+      <item itemvalue="JUnit.CommonUtilsTest.test redeivedDataClueanUp" />
       <item itemvalue="Application.SortingServiceImpl" />
+      <item itemvalue="JUnit.CommonUtilsTest.test doSortingWithBrandAndthencolor" />
+      <item itemvalue="JUnit.CommonUtilsTest.test createSimpleMapWithSortedData" />
+      <item itemvalue="JUnit.CommonUtilsTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommonUtilsTest" />
+        <item itemvalue="JUnit.CommonUtilsTest.test redeivedDataClueanUp" />
+        <item itemvalue="JUnit.CommonUtilsTest.test createSimpleMapWithSortedData" />
+        <item itemvalue="JUnit.CommonUtilsTest.test doSortingWithBrandAndthencolor" />
         <item itemvalue="Application.SortingServiceImpl" />
-        <item itemvalue="Application.HttpUtils" />
-        <item itemvalue="JUnit.All in HelloWorld" />
-        <item itemvalue="JUnit.All in HelloWorld" />
-        <item itemvalue="JUnit.All in HelloWorld" />
       </list>
     </recent_temporary>
   </component>
@@ -550,7 +561,7 @@
       <workItem from="1535776177959" duration="81000" />
       <workItem from="1535776301514" duration="298000" />
       <workItem from="1535843467694" duration="5568000" />
-      <workItem from="1535851535409" duration="14131000" />
+      <workItem from="1535851535409" duration="33410000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1535764523689</created>
@@ -685,20 +696,60 @@
       <option name="project" value="LOCAL" />
       <updated>1535861779230</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="testing">
+      <created>1535880810881</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1535880810881</updated>
+    </task>
+    <task id="LOCAL-00021" summary="testing">
+      <created>1535888799981</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1535888799981</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_HelloWorld - 2018.08.31 at 14h 13m 27s.xml">
-      <configuration name="All in HelloWorld" configurationId="JUnit" />
+    <history-entry file="CommonUtilsTest_test_redeivedDataClueanUp - 2018.09.03 at 01h 08m 32s.xml">
+      <configuration name="CommonUtilsTest.test redeivedDataClueanUp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommonUtilsTest_test_redeivedDataClueanUp - 2018.09.03 at 01h 16m 29s.xml">
+      <configuration name="CommonUtilsTest.test redeivedDataClueanUp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommonUtilsTest_test_doSortingWithBrandAndthencolor - 2018.09.03 at 01h 16m 37s.xml">
+      <configuration name="CommonUtilsTest.test doSortingWithBrandAndthencolor" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommonUtilsTest_test_doSortingWithBrandAndthencolor - 2018.09.03 at 01h 17m 08s.xml">
+      <configuration name="CommonUtilsTest.test doSortingWithBrandAndthencolor" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommonUtilsTest_test_doSortingWithBrandAndthencolor - 2018.09.03 at 01h 18m 58s.xml">
+      <configuration name="CommonUtilsTest.test doSortingWithBrandAndthencolor" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommonUtilsTest_test_createSimpleMapWithSortedData - 2018.09.03 at 01h 23m 44s.xml">
+      <configuration name="CommonUtilsTest.test createSimpleMapWithSortedData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommonUtilsTest_test_createSimpleMapWithSortedData - 2018.09.03 at 01h 23m 49s.xml">
+      <configuration name="CommonUtilsTest.test createSimpleMapWithSortedData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommonUtilsTest_test_createSimpleMapWithSortedData - 2018.09.03 at 01h 24m 28s.xml">
+      <configuration name="CommonUtilsTest.test createSimpleMapWithSortedData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommonUtilsTest_test_redeivedDataClueanUp - 2018.09.03 at 01h 25m 14s.xml">
+      <configuration name="CommonUtilsTest.test redeivedDataClueanUp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommonUtilsTest - 2018.09.03 at 01h 25m 30s.xml">
+      <configuration name="CommonUtilsTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39975000" />
+    <option name="totallyTimeSpent" value="59254000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1178" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22257721" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -716,12 +767,13 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.40263405" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.40263405" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32925683" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32925683" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.44026342" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" visible="true" weight="0.44026342" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32960597" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -735,7 +787,7 @@
       <window_info anchor="right" id="Bean Validation" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.44675186" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22257721" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -745,8 +797,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3283161" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3283161" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39981186" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -756,18 +808,19 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32925683" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32925683" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" visible="true" weight="0.44026342" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="PlantUML" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.44026342" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32960597" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="PlantUML" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -781,6 +834,32 @@
         <option value="3" />
         <option value="1" />
       </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -800,32 +879,186 @@
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingServiceImpl.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingServiceImpl.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/HttpUtils.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/HttpUtils.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingServiceImpl.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingServiceImpl.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingServiceImpl.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/service/SortingServiceImplTest.groovy</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/service/SortingServiceImplTest.groovy</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingServiceImpl.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingServiceImpl.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingServiceImpl.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingServiceImpl.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/service/SortingServiceImplTest.groovy</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/utils/HttpUtilsTest.groovy</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/HttpUtils.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/HttpUtils.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/utils/HttpUtilsTest.groovy</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/CommonUtils.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/utils/CommonUtilsTest.groovy</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/CommonUtils.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/utils/CommonUtilsTest.groovy</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>((HttpClientErrorException)ex).statusCode</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.springframework.web.client.HttpClientErrorException</custom-info>
+        <expression-string>list[0]</expression-string>
+        <language-id>Groovy</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>((HttpClientErrorException) ex).getResponseHeaders()</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.springframework.web.client.HttpClientErrorException</custom-info>
+        <expression-string>list[0].getBrand() == &quot;MG&quot;</expression-string>
+        <language-id>Groovy</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>((HttpClientErrorException) ex).getStatusText()</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.springframework.web.client.HttpClientErrorException</custom-info>
+        <expression-string>list[0].getBrand() = &quot;MG&quot;</expression-string>
+        <language-id>Groovy</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>ex.getMessage()</expression-string>
-        <language-id>JAVA</language-id>
+        <expression-string>list[0].getBrand()</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list.has(&quot;MG&quot;)</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list.has(&quot;brand&quot;)</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list.hasProperty(&quot;brand&quot;)</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list.hasProperty(&quot;MG&quot;)</expression-string>
+        <language-id>Groovy</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list.toString()</expression-string>
+        <language-id>Groovy</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
@@ -849,13 +1082,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/SortingResponse.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/util/ErrorMsgTransformer.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/handler/HelloWorldHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/util/HttpUtils.java" />
     <entry file="file://$PROJECT_DIR$/target/HelloWorld-1.0/com/aws/codestar/projecttemplates/handler/HelloWorldHandler.class" />
     <entry file="file://$PROJECT_DIR$/target/classes/com/aws/codestar/projecttemplates/handler/HelloWorldHandler.class">
@@ -911,20 +1137,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/client/RestTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
@@ -939,10 +1151,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/handler/HelloWorldHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="52" lean-forward="true" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+        <state relative-caret-position="96">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/ErrorMsgTransformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -973,74 +1195,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/ReceivedDataObjectMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/NamesWithCars.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="368">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingService.java">
+    <entry file="file://$PROJECT_DIR$/template.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        <state relative-caret-position="544">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/handler/HelloWorldHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cglib/cglib-nodep/3.2.5/cglib-nodep-3.2.5.jar!/net/sf/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/inputdata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/responsedata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/model/ReceivedDataObjectMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="133" column="21" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/handler/HelloWorldHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/service/SortingServiceImplTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" selection-start-line="16" selection-end-line="17" selection-end-column="52" />
+          <folding>
+            <element signature="e#51#118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/utils/HttpUtilsTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#49#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/JsonElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/spockframework/spock-core/1.0-groovy-2.4/spock-core-1.0-groovy-2.4-sources.jar!/org/spockframework/util/ReflectionUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/HttpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/service/SortingServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        <state relative-caret-position="394">
+          <caret line="56" column="61" selection-start-line="56" selection-start-column="61" selection-end-line="56" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2751#2752#0" expanded="true" />
-            <element signature="e#2789#2790#0" expanded="true" />
-            <element signature="e#2831#2832#0" expanded="true" />
-            <element signature="e#2871#2872#0" expanded="true" />
+            <element signature="e#2935#2936#0" expanded="true" />
+            <element signature="e#2973#2974#0" expanded="true" />
+            <element signature="e#3015#3016#0" expanded="true" />
+            <element signature="e#3055#3056#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/aws/codestar/projecttemplates/utils/CommonUtilsTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="e#49#109#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/CommonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/ErrorMsgTransformer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="45" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aws/codestar/projecttemplates/utils/HttpUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="57" column="148" selection-start-line="57" selection-start-column="148" selection-end-line="57" selection-end-column="148" />
+        <state relative-caret-position="822">
+          <caret line="62" column="66" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

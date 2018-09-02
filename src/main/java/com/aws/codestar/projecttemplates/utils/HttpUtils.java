@@ -37,10 +37,10 @@ public class HttpUtils {
     public <T> ResponseEntity<T> getResponse(String url, Class<T> responseType) throws ErrorGatewayResponse {
         log.debug("URL: {}", url);
 
-        //Makes Get request
         ResponseEntity<T> responseEntity = null;
         
         try{
+            //Makes Get request
             responseEntity = getRestTemplate().exchange(url, GET, new HttpEntity<>(new HttpHeaders()) , responseType);
         } catch (Exception ex) {
             log.error("Error retrieving data, the error response is {}", ex);
@@ -49,6 +49,10 @@ public class HttpUtils {
                 errorMap.put("Error", "error in getting data");
                 throw new ErrorGatewayResponse(new Gson().toJson(errorMap), ((HttpClientErrorException) ex).getResponseHeaders(), ((HttpClientErrorException)ex).getRawStatusCode());
             }
+        }
+        if (responseEntity != null) {
+            log.debug("Response Headers : {}", responseEntity.getStatusCodeValue());
+            log.debug("Response body : {}", responseEntity.getBody());
         }
         return responseEntity;
     }

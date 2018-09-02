@@ -39,13 +39,12 @@ public class SortingServiceImpl implements SortingService {
             statusCodeValue = responseEntity.getStatusCodeValue();
         } catch (Exception | ErrorGatewayResponse ex) {
             log.error("Error retrieving data, the status code is {} and the error response is {}", statusCodeValue, responseEntity.getBody());
-            if (200 != responseEntity.getStatusCodeValue()) {
-                Map<String, String> errorMap = new HashMap<>();
-                errorMap.put("Error", "error in getting data");
-                throw new ErrorGatewayResponse(new Gson().toJson(errorMap), responseEntity.getHeaders(), statusCodeValue);
-            }
         }
-
+        if (200 != responseEntity.getStatusCodeValue()) {
+            Map<String, String> errorMap = new HashMap<>();
+            errorMap.put("Error", "error in getting data");
+            throw new ErrorGatewayResponse(new Gson().toJson(errorMap), responseEntity.getHeaders(), statusCodeValue);
+        }
 
         //data received from external system
         JsonArray receivedData = new JsonParser().parse(responseEntity.getBody()).getAsJsonArray();
@@ -68,7 +67,7 @@ public class SortingServiceImpl implements SortingService {
 
     }
 
-    private HttpUtils getHttpUtils() {
+    protected HttpUtils getHttpUtils() {
         return new HttpUtils();
     }
 
